@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-
+  formData = {
+    email: '',
+    password: '',
+    confirmPassword: ''
+  };
+  onSubmit(){
+    console.log(this.formData)
+  }
 }

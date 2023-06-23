@@ -9,6 +9,7 @@ import { LayoutClientComponent } from './components/layouts/layout-client/layout
 import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ProductsComponent } from './pages/admin/products/products.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
 
@@ -18,7 +19,11 @@ const routes: Routes = [
     children: [
       { path: "", redirectTo: "home", pathMatch: "full" },
       { path: 'home', component: HomeComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
+
       { path: 'about', component: AboutComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
     ]
   },
 

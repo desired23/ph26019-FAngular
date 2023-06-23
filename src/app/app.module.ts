@@ -14,6 +14,9 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { ProductsComponent } from './pages/admin/products/products.component';
 import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 import { LayoutClientComponent } from './components/layouts/layout-client/layout-client.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { LayoutClientComponent } from './components/layouts/layout-client/layout
     DashboardComponent,
     ProductsComponent,
     LayoutAdminComponent,
-    LayoutClientComponent
+    LayoutClientComponent,
+    ProductDetailComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
