@@ -1,0 +1,11 @@
+<form action="" [formGroup]="submitForm" (ngSubmit)="onHandleSubmit()">
+    <div>
+        <label for="">name</label>
+        <input formControlName="name" type="text">
+        <label for="">price</label>
+        <input formControlName="price" type="number">
+        <label for="">desc</label>
+        <input formControlName="desc" type="text">
+        <button [disabled]="!submitForm.valid">Ok</button>
+    </div>
+</form>
